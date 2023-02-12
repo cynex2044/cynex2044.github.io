@@ -1,0 +1,50 @@
+body{
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background: rgb(58,180,120);
+    background: linear-gradient(90deg, rgba(58,180,120,1) 0%, rgba(66,196,200,1) 25%, rgba(46,152,168,1) 50%, rgba(40,152,183,1) 74%, rgba(69,175,252,1) 100%); 
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.36);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 24px;
+    padding: 48px;
+    height: fit-content;
+    width: fit-content;
+}
+.card :where(h2,p){
+    color: #000000;
+    text-align-last: center;
+    margin: 0;
+}
+.card h2{
+    font-size: 48px;
+}
+.card p{
+    margin-top: 8px;
+    font-size: 16px;
+    color: #d1d1d1;
+}
+.gcontainermn {  display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+  }
+  .gcontainercrdin {  display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+  
+  
